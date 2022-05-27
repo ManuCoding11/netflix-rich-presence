@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix Rich Presence",
+  "version": "1.0",
+
+  "description": "Browser Extension to display the currently watched Netflix title on Discord Activity",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/*"],
+      "js": ["src/extensionLib.js", "src/index.js"]
+    }
+  ],
+
+  "background": {
+    "service_worker": "src/background.js"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "webRequest"
+  ]
+}

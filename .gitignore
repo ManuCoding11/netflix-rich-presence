@@ -1,0 +1,7 @@
+*.json
+
+node_modules/
+node_modules/*
+
+!manifest.json
+!package.json
