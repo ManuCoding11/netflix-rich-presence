@@ -1,18 +1,17 @@
 // Library for all referenced extension functions / types
 
 /**
- * An object pattern for extension background messaging.
- * @typedef {Object} ExtensionMessage
+ * @typedef {Object} ExtensionMessage An object pattern for extension background messaging.
  * @property {ExtensionMessage.Action?} action
  * @property {ExtensionMessage.Title?} title
  * @property {ExtensionMessage.Debug?} debug
- * 
+ *
  * @typedef {Object} ExtensionMessage.Title
  * @property {String} content
  * @property {boolean} cache
- * 
+ *
  * @typedef {any} ExtensionMessage.Debug
- * 
+ *
  * @typedef {'title-update' | 'title-clear' | 'title-log' | 'log'} ExtensionMessage.Action
  */
 
