@@ -6,7 +6,7 @@
  */
 function getTitleName() {
     for (let tag of document.getElementsByTagName('h4')) {
-        if (tag.parentElement.classList.contains('medium')) return tag.innerText
+        if (tag.parentElement.classList.contains('medium') && !tag.classList) return tag.innerText
     }
 
     return (document.querySelector('div.ltr-qnht66') ?? { firstChild: { innerText: null } }).firstChild.innerText
